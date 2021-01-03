@@ -8,7 +8,7 @@ matrix = [[0 for i in range(int(n))] for j in range(int(n))]
 counter = 0
 
 for i, row in enumerate(matrix):
-    for j, column in enumerate(row):
+    for j in range(len(row)):
         if i != j:
             matrix[i][j] = 1
             counter += 1
