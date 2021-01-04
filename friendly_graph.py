@@ -1,9 +1,9 @@
 """1. На улице встретились N друзей. 
 Каждый пожал руку всем остальным друзьям (по одному разу). Сколько рукопожатий было?"""
 
-n = input("Введите число друзей: ")
+n = int(input("Введите число друзей: "))
 
-matrix = [[0 for i in range(int(n))] for j in range(int(n))]
+matrix = [[0 for i in range(n)] for j in range(n)]
 
 counter = 0
 
