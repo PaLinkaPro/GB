@@ -12,7 +12,6 @@ num = int(input('Введите количество вершин: '))
 g =[[None for i in range(num)] for j in range(num)]
 
 visited = set()
-path = []
 
 def graph(num):
     for i in range(num):
@@ -29,12 +28,11 @@ def graph(num):
 
 def dfs(visited, graph, node):
     if node not in visited:
-        path.append(node)
         visited.add(node)
         for neighbour in graph[node]:
             dfs(visited, graph, neighbour)
 
 dfs(visited, graph(num), 0)
-print(path)
+print(visited)
 
 
